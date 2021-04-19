@@ -4,13 +4,12 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def is_multiple_of_3(intInput):
+    return intInput % 3 == 0 and intInput > 0
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    is_multiple_of_3(3)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
