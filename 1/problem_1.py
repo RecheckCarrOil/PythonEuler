@@ -24,12 +24,17 @@ def sum_of_multiples_of_3_or_5(start_num, end_num):
     return total
 
 
+def sum_divisible_by(divisor, less_than):
+    p = less_than // divisor
+    return divisor * (p*(p+1) // 2)
+
+
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    is_multiple_of_3(3)
-
-    a = math.sqrt(225)
-    print(str(a))
+    sum_for_under_10000000 = sum_of_multiples_of_3_or_5(1, 10000000)
+    print(sum_for_under_10000000)
 
 
 
